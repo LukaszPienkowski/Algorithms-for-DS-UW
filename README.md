@@ -1,6 +1,6 @@
-# Algorithms-for-DS-UW-
+# Algorithms-for-DS-UW
 
-## 01.04
+## Task1
 Task:
 'Input: positive integers m, u, c, a list regist_times containing the registration time of each of the u many users, and two lists start_times and durations containing the start time and duration, respectively, of each of the c many advertising campaigns.
 
@@ -12,3 +12,17 @@ The peek of a campaign is the first time when at least half of the users registe
 The task: For each campaign, compute after how many minutes its peek is reached.
 
 Output: A list of c integers (for each campaign, time to reach its peek).'
+
+
+## Task2
+Input: positive integers p, n, m, a list a[0..n-1] containing n non-negative integers, and a list b[0..m-1] containing m non-negative integers.
+
+The grid cell (i,j) is filled with value (a[i]*b[j])%p. (% is the modulo operator.)
+Neo is at grid cell (0,0).
+Every grid cell with coordinates (n-1,j) (for 0 ≤ j < m) is an exit point.
+Neo can move only to the right (from position (i,j) to (i,j+1)), or to the bottom (from position (i,j) to (i+1,j)).
+Moving to the right costs 2*x seconds, where x is the value of the target cell.
+Moving to the bottom costs x seconds, where x is the value of the target cell.
+The task: For each exit point, compute how fast it can be reached by Neo.
+
+Output: A list of m integers (numbers of seconds to reach each exit point).
